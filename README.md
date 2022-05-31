@@ -21,7 +21,7 @@ Trent Dickson (programmer)
 
 Godfrey Best (teacher)
 
-Professor Steve (Youtube)
+Professor Steve [Youtube](https://www.youtube.com/watch?v=nGVoHEZojiQ)
 
 Althea Hanson (insight)
 
