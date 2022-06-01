@@ -1,25 +1,22 @@
-// Today's date at the top of the calendar 
-let today = moment();
-$("#currentDay").text(today.format("MMM Do, YYYY"));
-
-// Current time
-setInterval(() => {
-    let timeNow = moment().format("h:mm:ss");
-    $("#timeNow").text(timeNow);  
-}, 1000);
-
-// Build API call for OneWeather API
+// Weather variable to fetch the weather
 let weather = {
-    init(): () => {
-        document
-            .getElementById('searchBtn')
-            .addEventListener('click', app.fetchWeatherPlease);
+    init: () => {
+      document
+        .getElementById('weatherBtn')
+        .addEventListener('click', weather.fetchWeather);
     },
 
-    fetchWeatherPlease: () => {
-        // Key value pairs
-        
+    // Variable array to build out the url api link
+    fetchWeather: (event) => {
+      // use city variable to fetch weather
+      let city = document.getElementById('city').value;
+      // Unique API key after signing up fopr One Call API
+      let key = 'c2dc3a0143b15e98e4629214f9fb8420';
+      let lang = 'en';
+      let units = 'metric';
+      // Appropriate query strings
+      let url = `http://api.openweathermap.org/data/2.5/onecall?q=${city}&appid=${key}&units=${units}&lang=${lang}`;
     }
 }
 
-weather.init();
+  weather.init();

@@ -31,14 +31,12 @@ This project allows users to search for a city and display the current and futur
 
 ## Usage
 
-![demo](http://url/to/img.png)
+![demo](./assets/images/demo.png)
 
 
 ## Credits
 
 Trent Dickson (programmer)
-
-Godfrey Best (teacher)
 
 Professor Steve [Youtube](https://www.youtube.com/watch?v=nGVoHEZojiQ)
 
