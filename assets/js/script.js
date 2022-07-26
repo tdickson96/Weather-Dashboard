@@ -12,7 +12,6 @@ function displayDate() {
     }, 1000);
 }
 
-// Error handler for fetch, trying to mimic the AJAX .fail command: https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 var handleErrors = (response) => {
     if (!response.ok) {
         throw Error(response.statusText);
