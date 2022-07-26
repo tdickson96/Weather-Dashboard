@@ -3,6 +3,15 @@ var owmAPI = "c2dc3a0143b15e98e4629214f9fb8420";
 var currentCity = "";
 var lastCity = "";
 
+displayDate();
+
+function displayDate() {
+    setInterval(function() {
+        var time = moment().format("MMM Do, YYYY, hh:mm:ss");
+        $("#currentDay").text(time);        
+    }, 1000);
+}
+
 // Error handler for fetch, trying to mimic the AJAX .fail command: https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
 var handleErrors = (response) => {
     if (!response.ok) {
