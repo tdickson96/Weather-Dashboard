@@ -31,7 +31,7 @@ This project allows users to search for a city and display the current and futur
 
 ## Usage
 
-![demo](./assets/images/demo.png)
+![demo](./assets/images/screenshot.png)
 
 
 ## Author
